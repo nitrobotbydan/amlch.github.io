@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38, 42, 49);
+}
+.video2{
+    position: relative;
+    margin: auto;
+    width: 40%;
+    height: 800px;
+}
+.block{
+    position: relative;
+    margin: auto;
+    width: 40%;
+    height: 800px;
+    background-image: url("Background.png");
+}
+.glow::before ,  .glow::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg , yellow , green , red , orange , blue ,  cyan , purple ,lightblue  );
+    background-size: 400px;
+    width: calc(100% + 5px);
+    height : calc(100% + 5px);
+    z-index: -1;
+    animation: anime 15s linear infinite;
+
+    
+
+}
+@keyframes anime{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 200% 0;
+    }
+}
+.glow::after{
+    filter: blur(40px);
+    opacity: 0.99;
+}
+.button{
+    background: linear-gradient( gray ,black);
+    color: white;
+    padding: 20px 80px; 
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    left: 42.5%;
+    top: 90%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+
+    
+
+
+}

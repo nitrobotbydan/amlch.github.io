@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38, 42, 49);
+}
+
+.video2{
+    position: relative;
+    margin: 15% auto;
+    width: 35%;
+    size: 800px;
+    
+    display: subgrid;
+}
